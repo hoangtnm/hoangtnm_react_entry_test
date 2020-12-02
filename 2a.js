@@ -7,12 +7,12 @@ for (var num of arr1) {
   counts[num] = counts[num] ? counts[num] + 1 : 1;
 }
 
-for (var key of Object.keys(counts)){
-    value = counts[key];
-    if (value > maxValue){
-        maxKey = key;
-        maxValue = value;
-    }
+for (var key of Object.keys(counts)) {
+  value = counts[key];
+  if (value > maxValue) {
+    maxKey = key;
+    maxValue = value;
+  }
 }
 
 console.log(`${maxKey} ( ${maxValue} times )`);
